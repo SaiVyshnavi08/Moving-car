@@ -1,0 +1,63 @@
+.Frontwheel{
+  height :300px;
+   width:300px;
+   position: absolute;
+   left:190px;
+   top:550px;
+
+}
+
+.backwheel{
+    height :300px;
+   width:300px;
+   position: absolute;
+  left:1300px;
+  top:550px;
+}
+
+.car{
+    height :1000px;
+   width:1800px;
+   position: absolute;
+   /* animation:carz 1s linear infinite;
+   transform: translateX(100%); */
+}
+
+.Frontwheel{
+    /* animation-name:wheel;
+    animation-duration: 4s;
+    animation-iteration-count: 1; */
+    animation: wheel 2s linear infinite;
+}
+
+.backwheel{
+    animation: wheel 2s linear infinite;
+}
+@keyframes wheel{
+   
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+
+.container{
+    position:relative;
+    display: inline-block;
+    animation-name:carmove;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes carmove {
+    from{
+        left:0px;
+        top:900px;
+    }
+    to{
+        left:6000px;
+        top:900px;
+       
+    }
+}
